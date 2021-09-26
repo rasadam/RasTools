@@ -9,7 +9,10 @@ namespace RAS
 class iObject
 {
 
-iObject( std::string id ):id( id ){}
+public: 
+    iObject( std::string id ):id( id ){}
+    virtual bool operator==( const iObject* ) = 0;
+
 
 private:
     const std::string id;
