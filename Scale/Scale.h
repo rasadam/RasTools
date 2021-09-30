@@ -9,7 +9,7 @@ namespace RAS
 class Scale :public iObject
 {
 public:
-    Scale ( std::string  ID );
+    Scale ( std::string  id, std::string cardName, std::string provideDate, std::string contractStart, std::string contractEnd );
 
 private:
     // const string id (from base class)
@@ -19,6 +19,7 @@ private:
     std::string provideDate; 
     std::string contractStart;
     std::string contractEnd;
+    
 }; //end of class
 
 } //end of namespace
