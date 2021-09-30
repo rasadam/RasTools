@@ -15,7 +15,7 @@ public:
     inline virtual bool operator==( const iObject& other ){ return this->id == other.id; }
 
 
-private:
+protected:
     const std::string id;
     
 }; //end of class
