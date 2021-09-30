@@ -12,7 +12,7 @@ class iObject
 
 public: 
     iObject( std::string id ):id( id ){}
-    virtual bool operator==( const iObject* ) = 0;
+    inline virtual bool operator==( const iObject& other ){ return this->id == other.id; }
 
 
 private:
