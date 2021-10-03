@@ -22,6 +22,7 @@ public:
     inline std::string GetContractStart() const { return contractStart; }
     inline std::string GetContractEnd() const { return contractEnd; }
 
+
 private:
     // const string id (from base class)
     const std::string type; 
