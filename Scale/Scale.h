@@ -9,7 +9,7 @@ namespace RAS
 class Scale :public iObject
 {
 public:
-    Scale ( std::string  id, std::string cardName, std::string provideDate, std::string contractStart, std::string contractEnd );
+    Scale ( std::string  id, std::string cardName, std::string description, std::string provideDate, std::string contractStart, std::string contractEnd );
     inline bool operator== ( const Scale& other ){ return this->id == other.id && this->cardName == other.cardName; }
 
     inline void SetCardName( std::string cardName ){ this->cardName = cardName; }
@@ -26,6 +26,7 @@ private:
     // const string id (from base class)
     const std::string type; 
     const std::string subType; 
+    const std::string description;
     std::string cardName; 
     std::string provideDate; 
     std::string contractStart;
