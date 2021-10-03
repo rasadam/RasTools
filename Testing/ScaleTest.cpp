@@ -14,6 +14,24 @@ int main(int argc, char const *argv[])
     for ( auto &&i : scales ) {
         cout << i->GetID() << endl;
     }
+
+    if ( scales[0]->operator==( *scales[1] ) ) {
+        cout << "0 && 1 are the same" << endl;
+    } else {
+        cout << "0 && 1 are NOT the same" << endl;
+    }
+    
+    if ( scales[2]->operator==( *scales[1] ) ) {
+        cout << "2 && 1 are the same" << endl;
+    } else {
+        cout << "2 && 1 are NOT the same" << endl;
+    }
+
+    if ( scales[0]->operator==( *scales[2] ) ) {
+        cout << "0 && 2 are the same" << endl;
+    } else {
+        cout << "0 && 2 are NOT the same" << endl;
+    }
     
     return 0;
 }
