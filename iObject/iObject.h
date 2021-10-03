@@ -14,6 +14,7 @@ public:
     iObject( std::string id ):id( id ){}
     inline virtual bool operator==( const iObject& other ){ return this->id == other.id; }
 
+    inline std::string GetID() const { return id; }
 
 protected:
     const std::string id;
